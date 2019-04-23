@@ -1,5 +1,4 @@
-markers = [
-  {
+markers = [{
     "name": "Node 1",
     "lat": 43.6518,
     "lng": -79.3817,
@@ -14,11 +13,19 @@ markers = [
 ];
 
 ////Marker placement & Icon (doesn't seem to like being loaded before the markers FYI)
-var onlineNode = L.divIcon({className: 'onlinenode'});
-var offlineNode = L.divIcon({className: 'offlinenode'});
+var onlineNode = L.divIcon({
+  className: 'onlinenode',
+  iconSize: [15,15]
+});
+var offlineNode = L.divIcon({
+  className: 'offlinenode',
+  iconSize: [15,15]
+});
 
-    for (var i = 0; i < markers.length; ++i) {
-      L.marker([markers[i].lat, markers[i].lng], {icon: onlineNode})
-        .bindPopup('<h3>' + markers[i].name + '</h3>')
-        .addTo(map);
-    }
+for (var i = 0; i < markers.length; ++i) {
+  L.marker([markers[i].lat, markers[i].lng], {
+      icon: onlineNode
+    })
+    .bindPopup('<h3>' + markers[i].name + '</h3>')
+    .addTo(map);
+}
