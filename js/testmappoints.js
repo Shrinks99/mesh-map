@@ -11,10 +11,11 @@ markers = [
   }
 ];
 
-////Marker placement (doesn't seem to like being loaded after the markers FYI)
-for ( var i=0; i < markers.length; ++i )
-{
-   L.marker( [markers[i].lat, markers[i].lng] )
-      .bindPopup( '<h3>' + markers[i].name + '</h3>' )
-      .addTo( map );
-}
+////Marker placement & Icon (doesn't seem to like being loaded after the markers FYI)
+var myIcon = L.divIcon({className: 'onlinenode'});
+
+    for (var i = 0; i < markers.length; ++i) {
+      L.marker([markers[i].lat, markers[i].lng], {icon: myIcon})
+        .bindPopup('<h3>' + markers[i].name + '</h3>')
+        .addTo(map);
+    }

@@ -1,4 +1,4 @@
-/* apply a natural box layout model to all elements, but allowing components to change */
+/* Apply a natural box layout model to all elements, but allowing components to change */
 html {
 	box-sizing: border-box;
 }
@@ -13,4 +13,20 @@ body {
 html, body, #map {
 	width: 100%;
 	height: 100%;
+}
+
+/* Node map marker styling */
+.onlinenode, .offlinenode {
+	width: 0.5em;
+	height: 0.5em;
+	border-radius: 50%;
+	box-shadow: 0 0 0 0.25em rgba(255,255,255,1);
+}
+
+.onlinenode {
+	background-color: #66de79;
+}
+
+.offlinenode {
+	background-color: #e69f43;
 }
