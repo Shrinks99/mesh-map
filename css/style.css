@@ -8,9 +8,10 @@ html {
 body {
  margin: 0;
  padding: 0;
+ background-color: red;
 }
 
-#myDiv {
-  width: 100%;
-  height: 100%;
+html, body, #map {
+	width: 100%;
+	height: 100%;
 }
