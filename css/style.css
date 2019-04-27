@@ -1,0 +1,36 @@
+/* Apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #map {
+  width: 100%;
+  height: 100%;
+}
+
+/* Node map marker styling */
+.onlinenode, .offlinenode {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border-style: solid;
+	border-width: 0.2em;
+	border-color: white;
+}
+
+.onlinenode {
+  background-color: #49d25e;
+}
+
+.offlinenode {
+  background-color: #e4782a;
+}

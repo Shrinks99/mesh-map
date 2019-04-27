@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-        <head>
-<!-- Plotly.js -->
-            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-        </head>
-        <body>
-        <!-- Plotly chart will be drawn inside this DIV -->
-            <div id="myDiv"></div>
-            <script type="text/javascript" src="plotly-map.js"></script>
-        </body>
+<head>
+	<!-- Standard HTML Stuff which can be removed later if you don't want this to act as a standalone webpage / want it to be an include in a Jekyll site -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Mesh Map</title>
+		<link rel="stylesheet" href="css/style.css">
+		<!-- Leaflet JS&CSS -->
+		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+</head>
+<body>
+	<!-- Leaflet NOTE: Map points / data MUST be loaded after the config -->
+	<div id="map"></div>
+	<script src="js/leafletconfig.js"></script>
+	<script src="js/testmappoints.js"></script>
+</body>
 </html>
