@@ -19,18 +19,14 @@ html, body, #map {
 
 /* Node map marker styling */
 .onlinenode, .offlinenode {
-  width: 1em;
-  height: 1em;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
   border-style: solid;
-	border-width: 0.2em;
+	border-width: 0.2rem;
 	border-color: white;
 }
 
 .onlinenode {
-  background-color: #49d25e;
-}
-
-.offlinenode {
-  background-color: #e4782a;
+  background-color: #3479d5;
 }
